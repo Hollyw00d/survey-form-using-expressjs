@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <h1>Submitted Information</h1>
+
+        <%
+        // Print out property values using the
+        // dojo_user property name from the
+        // server.js file
+        %>
+
+        <p><span class="wide200">Name:</span> <span class="wide200"><%= dojo_user.name %></span></p>
+
+        <p><span class="wide200">Dojo Location:</span> <span class="wide200"><%= dojo_user.dojo_location %></span></p>
+
+        <p><span class="wide200">Favorite Language:</span> <span class="wide200"><%= dojo_user.fav_language %></span></p>
+
+        <p><span class="wide200">Comment:</span> <span class="wide200"><%= dojo_user.comment %></span></p>
+
+    <form action="gohome" method="post">
+        <p><input type="submit" value="Go Back"/></p>
+    </form>
+
+</div>
+
+</body>
+</html>

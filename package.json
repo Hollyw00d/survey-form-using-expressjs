@@ -1,0 +1,13 @@
+{
+  "name": "survey-form",
+  "description": "Simple survey form using node.js, express and other npm packages",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.x",
+    "ejs": "2.3.x",
+    "body-parser": "1.13.x"
+  }
+}
